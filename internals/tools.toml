@@ -1,0 +1,10 @@
+# This is the list for available apps
+
+[cloud-tools]
+g-docs = "Google Docs"
+g-sheets = "Google Sheets"
+draw-io = "Draw.io"
+raml = "RAML"
+
+[desktop-tools]
+ms-project = "Microsoft Project"

@@ -1,0 +1,7 @@
+["erd.<target>"]
+extension = ""
+template = "template-database-diagram"
+
+["erd.<target>.spec"]
+extension = ""
+template = "template-database-spec"

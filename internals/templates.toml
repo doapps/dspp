@@ -1,0 +1,15 @@
+[template-architecture-diagram]
+url = "http://drive.google.com/?id=123"
+tool = "draw-io"
+
+[template-database-diagram]
+url = "http://drive.google.com/?id=234"
+tool = "draw-io"
+
+[template-database-spec]
+url = "http://drive.google.com/?id=345"
+tool = "g-docs"
+
+[template-sofware-process]
+url = "http://drive.google.com/?id=456"
+tool = "draw-io"
