@@ -1,3 +1,2 @@
 ["architecture"]
-extension = ""
-template = "template-architecture"
+template = "template-diagram-architecture"

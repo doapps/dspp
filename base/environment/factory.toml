@@ -1,0 +1,8 @@
+["constants"]
+template = "template-environment-constants"
+
+["credentials"]
+template = "template-environment-credentials"
+
+["variables"]
+template = "template-environment-variables"

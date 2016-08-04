@@ -1,0 +1,13 @@
+["release-manual.<target>"]
+generic = "generic-classic-document"
+
+  ["release-manual.<target>".body]
+  doc-title = "Manual de publicación del aplicativo"
+  content = "content-closure-release-manual"
+
+["technical-release.<target>"]
+generic = "generic-classic-document"
+
+  ["technical-release.<target>".body]
+  doc-title = "Informe técnico del aplicativo"
+  content = "content-closure-technical-release"

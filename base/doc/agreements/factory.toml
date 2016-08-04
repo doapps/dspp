@@ -1,0 +1,6 @@
+["meeting-minutes"]
+generic = "generic-classic-document"
+
+  ["meeting-minutes".body]
+  doc-title = "Documento de acta de reunión"
+  content = "content-agreements-meeting-minutes"

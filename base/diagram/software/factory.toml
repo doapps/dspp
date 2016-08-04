@@ -1,3 +1,15 @@
+["CHANGELOG"]
+template = "template-changelog"
+
 ["endpoints"]
-extension = ""
-template = "template-database-diagram"
+generic = "generic-classic-document"
+
+  ["endpoints".body]
+  doc-title = "Listado de servicios web, sockets y notificaciones"
+  content = "content-sofware-endpoints"
+
+["process"]
+template = "template-sofware-process"
+
+["sequence"]
+template = "template-sofware-sequence"

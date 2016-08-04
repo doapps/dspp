@@ -1,10 +1,14 @@
 # This is the list for available apps
+# Is useful for create new blank files
 
-[cloud-tools]
-g-docs = "Google Docs"
-g-sheets = "Google Sheets"
-draw-io = "Draw.io"
-raml = "RAML"
+[g-docs]
+name = "Google Docs"
+category = "cloud"
 
-[desktop-tools]
-ms-project = "Microsoft Project"
+[g-sheets]
+name = "Google Sheets"
+category = "cloud"
+
+[draw-io]
+name = "Draw.io"
+category = "cloud"

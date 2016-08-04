@@ -1,15 +1,97 @@
-[template-architecture-diagram]
-url = "http://drive.google.com/?id=123"
-tool = "draw-io"
+# Traits
+# ===
+# Are documents with mask content
+# like covers or watermarks, useful for composition.
+# Keep variables that can be customized
+# Variables can be handled by: <variable>, <#global>
+[trait-mask-cover]
+url = "http://drive.google.com/?id=001"
+
+[trait-mask-sheets]
+url = "http://drive.google.com/?id=002"
+
+# Generics
+# ===
+# The generics can be composited by traits.
+# It is expected to have a body for fill variables
+[generic-classic-document]
+cover = "trait-mask-cover"
+sheets = "trait-mask-sheets"
+
+# Raw Contents
+# ===
+# Are documents with only text.
+# This is useful for composition with
+# generic templates
+[content-agreements-meeting-minutes]
+url = "http://drive.google.com/?id=003"
+
+[content-database-spec]
+url = "http://drive.google.com/?id=004"
+
+[content-sofware-endpoints]
+url = "http://drive.google.com/?id=005"
+
+[content-closure-release-manual]
+url = "http://drive.google.com/?id=006"
+
+[content-closure-technical-release]
+url = "http://drive.google.com/?id=007"
+
+[content-plannig-charter]
+url = "http://drive.google.com/?id=008"
+
+[content-plannig-requirements]
+url = "http://drive.google.com/?id=008"
+
+[content-plannig-roles]
+url = "http://drive.google.com/?id=009"
+
+[content-schedule-overview]
+url = "http://drive.google.com/?id=010"
+
+[content-testing-specification]
+url = "http://drive.google.com/?id=011"
+
+# Templates
+# ===
+# The templates are only documents with static content.
+# Doesn't allow to customize with variables
+[template-changelog]
+url = "http://drive.google.com/?id=013"
+
+[template-diagram-architecture]
+url = "http://drive.google.com/?id=014"
 
 [template-database-diagram]
-url = "http://drive.google.com/?id=234"
-tool = "draw-io"
-
-[template-database-spec]
-url = "http://drive.google.com/?id=345"
-tool = "g-docs"
+url = "http://drive.google.com/?id=015"
 
 [template-sofware-process]
-url = "http://drive.google.com/?id=456"
-tool = "draw-io"
+url = "http://drive.google.com/?id=016"
+
+[template-sofware-sequence]
+url = "http://drive.google.com/?id=017"
+
+[template-planning-schedule]
+url = "http://drive.google.com/?id=018"
+
+[template-environment-constants]
+url = "http://drive.google.com/?id=019"
+
+[template-environment-credentials]
+url = "http://drive.google.com/?id=020"
+
+[template-environment-variables]
+url = "http://drive.google.com/?id=021"
+
+[template-ui-constants]
+url = "http://drive.google.com/?id=022"
+
+[template-ui-android-illustrator]
+url = "http://drive.google.com/?id=023"
+
+[template-ui-ios-illustrator]
+url = "http://drive.google.com/?id=024"
+
+[template-ui-web-illustrator]
+url = "http://drive.google.com/?id=025"

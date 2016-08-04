@@ -1,0 +1,6 @@
+["specification"]
+generic = "generic-classic-document"
+
+  ["specification".body]
+  doc-title = "Documento de especificación de pruebas"
+  content = "content-testing-specification"

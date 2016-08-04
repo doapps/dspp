@@ -1,7 +1,12 @@
-["erd.<target>"]
-extension = ""
+["CHANGELOG"]
+template = "template-changelog"
+
+["erd.<macrotarget>"]
 template = "template-database-diagram"
 
-["erd.<target>.spec"]
-extension = ""
-template = "template-database-spec"
+["erd.<macrotarget>.spec"]
+generic = "generic-classic-document"
+
+  ["erd.<macrotarget>.spec".body]
+  doc-title = "Documento de acta de reunión"
+  content = "content-database-spec"

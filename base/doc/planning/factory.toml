@@ -1,0 +1,20 @@
+["charter"]
+generic = "generic-classic-document"
+
+  ["charter".body]
+  doc-title = "Documento de Alcance"
+  content = "content-plannig-charter"
+
+["requirements.<scope>"]
+generic = "generic-classic-document"
+
+  ["requirements.<scope>".body]
+  doc-title = "Documento de historias de usuario"
+  content = "content-plannig-requirements"
+
+["roles"]
+generic = "generic-classic-document"
+
+  ["roles".body]
+  doc-title = "Documento de roles y actividades"
+  content = "content-plannig-roles"

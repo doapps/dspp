@@ -1,0 +1,5 @@
+["constants"]
+template = "template-ui-constants"
+
+["ui.web.ai"]
+template = "template-ui-web-illustrator"

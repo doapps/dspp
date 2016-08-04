@@ -1,0 +1,5 @@
+["constants"]
+template = "template-ui-constants"
+
+["ui.ios.ai"]
+template = "template-ui-ios-illustrator"
