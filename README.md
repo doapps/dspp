@@ -1,5 +1,5 @@
 # DSPP
-This repository handle the base structure for the new projects.
+This repository handles the base structure for the new projects.
 
 ## Repository Structure
 * The `internals` folder keeps the templates, variables and utilities that will be used in the building process of the final structure.
