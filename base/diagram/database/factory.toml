@@ -8,5 +8,6 @@ template = "template-database-diagram"
 generic = "generic-classic-document"
 
   ["erd.<macrotarget>.spec".body]
-  doc-title = "Documento de acta de reunión"
+  doc-title = "Documento de diccionario de datos (<macrotarget>)"
+  ["erd.<macrotarget>.spec".composition]
   content = "content-database-spec"

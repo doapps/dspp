@@ -6,4 +6,5 @@ generic = "generic-classic-document"
 
   ["overview".body]
   doc-title = "Documento de especificación de cronograma"
+  ["overview".composition]
   content = "content-schedule-overview"

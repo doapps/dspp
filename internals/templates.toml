@@ -1,22 +1,12 @@
-# Traits
-# ===
-# Are documents with mask content
-# like covers or watermarks, useful for composition.
-# Keep variables that can be customized
-# Variables can be handled by: <variable>, <#global>
-[trait-mask-cover]
-url = "http://drive.google.com/?id=001"
-
-[trait-mask-sheets]
-url = "http://drive.google.com/?id=002"
-
 # Generics
 # ===
-# The generics can be composited by traits.
+# The generics can be composited by traits(removed at moment).
 # It is expected to have a body for fill variables
 [generic-classic-document]
-cover = "trait-mask-cover"
-sheets = "trait-mask-sheets"
+filename = "generic:mask-document"
+
+  [generic-classic-document.body]
+  project-name = "<project-name>"
 
 # Raw Contents
 # ===
@@ -24,74 +14,74 @@ sheets = "trait-mask-sheets"
 # This is useful for composition with
 # generic templates
 [content-agreements-meeting-minutes]
-url = "http://drive.google.com/?id=003"
+filename = "content:agreements-meeting-minutes"
 
 [content-database-spec]
-url = "http://drive.google.com/?id=004"
+filename = "content:database-spec"
 
 [content-sofware-endpoints]
-url = "http://drive.google.com/?id=005"
+filename = "content:software-endpoints"
 
 [content-closure-release-manual]
-url = "http://drive.google.com/?id=006"
+filename = "content:closure-release-manual"
 
 [content-closure-technical-release]
-url = "http://drive.google.com/?id=007"
+filename = "content:closure-technical-release"
 
-[content-plannig-charter]
-url = "http://drive.google.com/?id=008"
+[content-planning-charter]
+filename = "content:planning-charter"
 
-[content-plannig-requirements]
-url = "http://drive.google.com/?id=008"
+[content-planning-requirements]
+filename = "content:planning-requirements"
 
-[content-plannig-roles]
-url = "http://drive.google.com/?id=009"
+[content-planning-roles]
+filename = "content:planning-roles"
 
 [content-schedule-overview]
-url = "http://drive.google.com/?id=010"
+filename = "content:schedule-overview"
 
 [content-testing-specification]
-url = "http://drive.google.com/?id=011"
+filename = "content:testing-specification"
 
 # Templates
 # ===
 # The templates are only documents with static content.
 # Doesn't allow to customize with variables
 [template-changelog]
-url = "http://drive.google.com/?id=013"
+filename = "template:changelog"
 
 [template-diagram-architecture]
-url = "http://drive.google.com/?id=014"
+filename = "template:diagram-architecture"
 
 [template-database-diagram]
-url = "http://drive.google.com/?id=015"
+filename = "template:database-diagram"
 
 [template-sofware-process]
-url = "http://drive.google.com/?id=016"
+filename = "template:sofware-process"
 
 [template-sofware-sequence]
-url = "http://drive.google.com/?id=017"
+filename = "template:sofware-sequence"
 
 [template-planning-schedule]
-url = "http://drive.google.com/?id=018"
+filename = "template:planning-schedule"
 
 [template-environment-constants]
-url = "http://drive.google.com/?id=019"
+filename = "template:environment-constants"
 
 [template-environment-credentials]
-url = "http://drive.google.com/?id=020"
+filename = "template:environment-credentials"
 
 [template-environment-variables]
-url = "http://drive.google.com/?id=021"
+filename = "template:environment-variables"
 
 [template-ui-constants]
-url = "http://drive.google.com/?id=022"
+filename = "template:ui-constants"
 
 [template-ui-android-illustrator]
-url = "http://drive.google.com/?id=023"
+filename = "template:ui-android-illustrator"
 
 [template-ui-ios-illustrator]
-url = "http://drive.google.com/?id=024"
+filename = "template:ui-ios-illustrator"
 
 [template-ui-web-illustrator]
-url = "http://drive.google.com/?id=025"
+filename = "template:ui-web-illustrator"

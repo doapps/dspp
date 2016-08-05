@@ -3,4 +3,5 @@ generic = "generic-classic-document"
 
   ["specification".body]
   doc-title = "Documento de especificación de pruebas"
+  ["specification".composition]
   content = "content-testing-specification"

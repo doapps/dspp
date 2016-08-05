@@ -6,6 +6,7 @@ generic = "generic-classic-document"
 
   ["endpoints".body]
   doc-title = "Listado de servicios web, sockets y notificaciones"
+  ["endpoints".composition]
   content = "content-sofware-endpoints"
 
 ["process"]

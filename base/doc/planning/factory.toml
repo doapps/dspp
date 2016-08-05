@@ -3,18 +3,21 @@ generic = "generic-classic-document"
 
   ["charter".body]
   doc-title = "Documento de Alcance"
-  content = "content-plannig-charter"
+  ["charter".composition]
+  content = "content-planning-charter"
 
 ["requirements.<scope>"]
 generic = "generic-classic-document"
 
   ["requirements.<scope>".body]
   doc-title = "Documento de historias de usuario"
-  content = "content-plannig-requirements"
+  ["requirements.<scope>".composition]
+  content = "content-planning-requirements"
 
 ["roles"]
 generic = "generic-classic-document"
 
   ["roles".body]
   doc-title = "Documento de roles y actividades"
-  content = "content-plannig-roles"
+  ["roles".composition]
+  content = "content-planning-roles"
