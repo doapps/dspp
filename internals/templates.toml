@@ -1,52 +1,13 @@
-# Generics
-# ===
-# The generics can be composited by traits(removed at moment).
-# It is expected to have a body for fill variables
-[generic-classic-document]
-filename = "generic:mask-document"
-
-  [generic-classic-document.body]
-  project-name = "<project-name>"
-
-# Raw Contents
-# ===
-# Are documents with only text.
-# This is useful for composition with
-# generic templates
-[content-agreements-meeting-minutes]
-filename = "content:agreements-meeting-minutes"
-
-[content-database-spec]
-filename = "content:database-spec"
-
-[content-sofware-endpoints]
-filename = "content:software-endpoints"
-
-[content-closure-release-manual]
-filename = "content:closure-release-manual"
-
-[content-closure-technical-release]
-filename = "content:closure-technical-release"
-
-[content-planning-charter]
-filename = "content:planning-charter"
-
-[content-planning-requirements]
-filename = "content:planning-requirements"
-
-[content-planning-roles]
-filename = "content:planning-roles"
-
-[content-schedule-overview]
-filename = "content:schedule-overview"
-
-[content-testing-specification]
-filename = "content:testing-specification"
-
 # Templates
 # ===
 # The templates are only documents with static content.
 # Doesn't allow to customize with variables
+[template-blank-document]
+filename = "template:blank-document"
+
+  [template-blank-document.body]
+  project-name = "<project-name>"
+
 [template-changelog]
 filename = "template:changelog"
 

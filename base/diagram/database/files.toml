@@ -5,9 +5,8 @@ template = "template-changelog"
 template = "template-database-diagram"
 
 ["erd.<macrotarget>.spec"]
-generic = "generic-classic-document"
+template = "template-blank-document"
 
   ["erd.<macrotarget>.spec".body]
   doc-title = "Documento de diccionario de datos (<macrotarget>)"
-  ["erd.<macrotarget>.spec".composition]
-  content = "content-database-spec"
+  content = "content:database-spec"

@@ -2,12 +2,11 @@
 template = "template-changelog"
 
 ["endpoints"]
-generic = "generic-classic-document"
+template = "template-blank-document"
 
   ["endpoints".body]
   doc-title = "Listado de servicios web, sockets y notificaciones"
-  ["endpoints".composition]
-  content = "content-sofware-endpoints"
+  content = "content:sofware-endpoints"
 
 ["process"]
 template = "template-sofware-process"

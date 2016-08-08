@@ -1,15 +1,13 @@
 ["release-manual.<target>"]
-generic = "generic-classic-document"
+template = "template-blank-document"
 
   ["release-manual.<target>".body]
   doc-title = "Manual de publicación del aplicativo <target>"
-  ["release-manual.<target>".composition]
-  content = "content-closure-release-manual"
+  content = "content:closure-release-manual"
 
 ["technical-release.<target>"]
-generic = "generic-classic-document"
+template = "template-blank-document"
 
   ["technical-release.<target>".body]
   doc-title = "Informe técnico del aplicativo <target>"
-  ["technical-release.<target>".composition]
-  content = "content-closure-technical-release"
+  content = "content:closure-technical-release"

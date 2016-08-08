@@ -2,9 +2,8 @@
 template = "template-planning-schedule"
 
 ["overview"]
-generic = "generic-classic-document"
+template = "template-blank-document"
 
   ["overview".body]
   doc-title = "Documento de especificación de cronograma"
-  ["overview".composition]
-  content = "content-schedule-overview"
+  content = "content:schedule-overview"
