@@ -1,7 +1,6 @@
 # Templates
 # ===
-# The templates are only documents with static content.
-# Doesn't allow to customize with variables
+# The templates works also as generics
 [template-blank-document]
 filename = "template:blank-document"
 
