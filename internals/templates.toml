@@ -41,7 +41,7 @@ filename = "template:ui-constants"
 filename = "template:ui-android-illustrator.ai"
 
 [template-ui-ios-illustrator]
-filename = "template-ui-ios-illustrator.ai"
+filename = "template:ui-ios-illustrator.ai"
 
 [template-ui-web-illustrator]
 filename = "template:ui-web-illustrator.ai"

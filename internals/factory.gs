@@ -5,7 +5,7 @@ function buildTreeNodesBase( folderNodes, rootFolder, objFolders, appendString )
         var childNode = rootFolder.createFolder( node );
         var directoryString = ( appendString + '/' + node ).slice( 1 );
 
-        Logger.log( 'directoryString: ' + directoryString );
+        // Logger.log( 'directoryString: ' + directoryString );
         folderNodes[ directoryString ] = childNode;
         buildTreeNodesBase( folderNodes, childNode, objFolders[ node ], appendString + '/' + node );
       } else {
@@ -18,12 +18,10 @@ function buildTreeNodesBase( folderNodes, rootFolder, objFolders, appendString )
 function buildTreeNodes( rootFolder, objFolders ) {
   var folderNodes = {};
   buildTreeNodesBase( folderNodes, rootFolder, objFolders, '' );
-  Logger.log( '-->buildTreeNodes' );
   return folderNodes;
 }
 
 function loadTemplateFiles( templateFolder ) {
-  Logger.log( '-->loadTemplateFiles' );
   var files = templateFolder.getFiles();
   var fileTemplates = {};
 
@@ -47,6 +45,9 @@ function getStyleDocument() {
 }
 
 function mergeFiles( fileContent, fileTarget ) {
+  Logger.log('fileContent:' + fileContent);
+  Logger.log('fileTarget:' + fileTarget);
+
   var bodyFileContent = fileContent.getBody();
   var bodyFileTarget = fileContent.getBody();
   var style = getStyleDocument();
@@ -95,6 +96,11 @@ function objectEmpty(obj) {
   return Object.keys(obj).length === 0 && obj.constructor === Object;
 }
 
+function openDocument( id ) {
+  var file = DocumentApp.openById( id );
+  return file;
+}
+
 function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) {
   var fileTemplates = loadTemplateFiles( templateFolder );
 
@@ -114,6 +120,7 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
         var folderDestination = folderNodes[ path ];
 
         var file_created = file_template.makeCopy( fileName, folderDestination );
+        Logger.log('file_created:' + file_created);
 
         var fileBody = fileDescription.body || {};
         var templateBody = dataTemplates[ templateName ].body || {};
@@ -124,8 +131,12 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
 
           // var bodyDocument = file_created.getBody();
           var fileId = file_created.getId();
-          var documentOpened = DocumentApp.openById( fileId );
-          var bodyDocument = documentOpened.getBody();
+          var fileCreatedOpened = openDocument( fileId );
+          var bodyDocument = fileCreatedOpened.getBody();
+
+          Logger.log('fileId:' + fileId);
+          Logger.log('-bodyContentNewFile-');
+          Logger.log(bodyContentNewFile);
 
           for ( var prop in bodyContentNewFile ) {
             var textContent = bodyContentNewFile[ prop ];
@@ -141,12 +152,19 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
               return;
             }
 
+            Logger.log('prop:'+prop);
+            Logger.log('textContent:' + textContent);
+
             bodyDocument.replaceText( pattern, textContent );
           }
 
           if ( contentFile ) {
+            Logger.log('contentFile:' + contentFile);
             var file_content = fileTemplates[ contentFile ];
-            mergeFiles( file_content, file_created );
+            var fileContentId = file_content.getId();
+            var fileContentOpened = openDocument( fileContentId );
+
+            mergeFiles( fileContentOpened, fileCreatedOpened );
           }
         }
       }
@@ -156,7 +174,7 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
 
 function buildProject( objParameters ) {
   objParameters = objParameters || {};
-  var response = { status: 203 };
+  var response = { status: 204 };
   Logger.log('run');
 
   var objFolders = objParameters.objFolders;
@@ -178,4 +196,8 @@ function buildProject( objParameters ) {
   buildFiles( folderNodes, filesToBuild, dataTemplates, templatesFolder );
 
   return response;
+}
+
+function test() {
+  Logger.log('hey there');
 }
