@@ -1,19 +1,19 @@
 ["charter"]
-template = "template-blank-documents"
+template = "template-blank-document"
 
   ["charter".body]
   doc-title = "Documento de Alcance"
   content = "content:planning-charter"
 
 ["requirements.<scope>"]
-template = "template-blank-documents"
+template = "template-blank-document"
 
   ["requirements.<scope>".body]
   doc-title = "Documento de historias de usuario"
   content = "content:planning-requirements"
 
 ["roles"]
-template = "template-blank-documents"
+template = "template-blank-document"
 
   ["roles".body]
   doc-title = "Documento de roles y actividades"
