@@ -49,9 +49,11 @@ function mergeFiles( fileContent, fileTarget ) {
   Logger.log('fileTarget:' + fileTarget);
 
   var bodyFileContent = fileContent.getBody();
-  var bodyFileTarget = fileContent.getBody();
+  var bodyFileTarget = fileTarget.getBody();
   var style = getStyleDocument();
   var totalElements = bodyFileContent.getNumChildren();
+
+  Logger.log( 'totalElements' + totalElements );
 
   bodyFileContent.setAttributes( style );
 
@@ -89,6 +91,7 @@ function extend(target) {
       }
     }
   }
+
   return target;
 }
 
