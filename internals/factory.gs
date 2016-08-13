@@ -4,8 +4,6 @@ function buildTreeNodesBase( folderNodes, rootFolder, objFolders, appendString )
       if ( typeof objFolders[ node ] == "object" && objFolders[ node ] !== null ) {
         var childNode = rootFolder.createFolder( node );
         var directoryString = ( appendString + '/' + node ).slice( 1 );
-
-        // Logger.log( 'directoryString: ' + directoryString );
         folderNodes[ directoryString ] = childNode;
         buildTreeNodesBase( folderNodes, childNode, objFolders[ node ], appendString + '/' + node );
       } else {
@@ -45,9 +43,6 @@ function getStyleDocument() {
 }
 
 function mergeFiles( fileContent, fileTarget ) {
-  Logger.log('fileContent:' + fileContent);
-  Logger.log('fileTarget:' + fileTarget);
-
   var bodyFileContent = fileContent.getBody();
   var bodyFileTarget = fileTarget.getBody();
   var style = getStyleDocument();
@@ -123,7 +118,6 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
         var folderDestination = folderNodes[ path ];
 
         var file_created = file_template.makeCopy( fileName, folderDestination );
-        Logger.log('file_created:' + file_created);
 
         var fileBody = fileDescription.body || {};
         var templateBody = dataTemplates[ templateName ].body || {};
@@ -137,15 +131,12 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
           var fileCreatedOpened = openDocument( fileId );
           var bodyDocument = fileCreatedOpened.getBody();
 
-          Logger.log('fileId:' + fileId);
-          Logger.log('-bodyContentNewFile-');
-          Logger.log(bodyContentNewFile);
-
           for ( var prop in bodyContentNewFile ) {
             var textContent = bodyContentNewFile[ prop ];
             var pattern;
 
             if ( prop === 'content' ) {
+              bodyDocument.replaceText('{content}', '');
               continue;
             } else if ( /doc-title/.test( prop ) ) {
               pattern = '{doc-title}';
@@ -155,14 +146,10 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
               return;
             }
 
-            Logger.log('prop:'+prop);
-            Logger.log('textContent:' + textContent);
-
             bodyDocument.replaceText( pattern, textContent );
           }
 
           if ( contentFile ) {
-            Logger.log('contentFile:' + contentFile);
             var file_content = fileTemplates[ contentFile ];
             var fileContentId = file_content.getId();
             var fileContentOpened = openDocument( fileContentId );
@@ -177,8 +164,7 @@ function buildFiles( folderNodes, filesToBuild, dataTemplates, templateFolder ) 
 
 function buildProject( objParameters ) {
   objParameters = objParameters || {};
-  var response = { status: 204 };
-  Logger.log('run');
+  var response = { status: 200, folderId: '' };
 
   var objFolders = objParameters.objFolders;
   var dataTemplates = objParameters.dataTemplates;
@@ -195,12 +181,9 @@ function buildProject( objParameters ) {
 
   var folderNodes = buildTreeNodes( projectFolder, objFolders );
 
-  Logger.log( '<-before execute buildFiles->' );
   buildFiles( folderNodes, filesToBuild, dataTemplates, templatesFolder );
 
-  return response;
-}
+  response.folderId = projectFolder.getId();
 
-function test() {
-  Logger.log('hey there');
+  return response;
 }
