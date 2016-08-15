@@ -23,7 +23,7 @@ filename = "template:sofware-process"
 filename = "template:sofware-sequence"
 
 [template-planning-schedule]
-filename = "template:planning-schedule"
+filename = "template:planning-schedule.mpp"
 
 [template-environment-constants]
 filename = "template:environment-constants"
@@ -38,10 +38,10 @@ filename = "template:environment-variables"
 filename = "template:ui-constants"
 
 [template-ui-android-illustrator]
-filename = "template:ui-android-illustrator"
+filename = "template:ui-android-illustrator.ai"
 
 [template-ui-ios-illustrator]
-filename = "template:ui-ios-illustrator"
+filename = "template:ui-ios-illustrator.ai"
 
 [template-ui-web-illustrator]
-filename = "template:ui-web-illustrator"
+filename = "template:ui-web-illustrator.ai"
