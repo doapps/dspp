@@ -12,7 +12,7 @@ Pasos para exportar una imagen en un documento de tipo Draw.io.
 ![alt text][logo]
 
 [logo]:
-https://github.com/doapps/dspp/tree/master/docs/images/Paso01.png
+https://github.com/doapps/dspp/raw/master/docs/images/Paso01.png
 
 
 2.Aparecerá un recuadro donde seleccionaremos la opción **Incluir una copia de mi diagrama** (Include a copy of my diagram) y le damos clic a **Exportar** (Export).
@@ -20,7 +20,7 @@ https://github.com/doapps/dspp/tree/master/docs/images/Paso01.png
 ![alt text][logo]
 
 [logo]:
-https://github.com/doapps/dspp/tree/master/docs/images/Paso02.png
+https://github.com/doapps/dspp/raw/master/docs/images/Paso02.png
 
 
 3.Renombramos la imagen, y le damos clic a la opción **Descargar** (Download).
@@ -28,7 +28,7 @@ https://github.com/doapps/dspp/tree/master/docs/images/Paso02.png
 ![alt text][logo]
 
 [logo]:
-https://github.com/doapps/dspp/tree/master/docs/images/Paso03.png
+https://github.com/doapps/dspp/raw/master/docs/images/Paso03.png
 
 
 ## Cómo crear un repositorio en Gitlab
@@ -43,7 +43,10 @@ Pasos para crear un repo en Gitlab.
 
 4.Nombrar el repo de la siguiente manera:
 
-- **Notación:** <namespace>-<target>
+- **Notación:**
+```
+<namespace>-<target>
+```
 
  Un ejemplo sería:
  ```
@@ -60,7 +63,10 @@ Pasos para crear un canal en Slack.
 
 4.Nombrar el repo de la siguiente manera:
 
-- **Notación:** <namespace>
+- **Notación:**
+```
+ <namespace>
+```
 
  Un ejemplo sería:
  ```
@@ -77,9 +83,12 @@ Pasos para crear un board en trello.
 
 4.Nombrar el repo de la siguiente manera:
 
-- **Notación:** <namespace>
+- **Notación:**
+```
+<project-name>
+```
 
  Un ejemplo sería:
  ```
-fast-taxi
+fast taxi
  ```
