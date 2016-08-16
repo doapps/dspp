@@ -9,25 +9,25 @@ Pasos para exportar una imagen en un documento de tipo Draw.io.
 
 1.Ir la barra de herramientas, dar clic en **Archivo** (File) y seleccionar la opción **Exportar como imagen** (Export as Image).
 
-![alt text][logo]
+![alt text][logo1]
 
-[logo]:
+[logo1]:
 https://github.com/doapps/dspp/raw/master/docs/images/Paso01.png
 
 
 2.Aparecerá un recuadro donde seleccionaremos la opción **Incluir una copia de mi diagrama** (Include a copy of my diagram) y le damos clic a **Exportar** (Export).
 
-![alt text][logo]
+![alt text][logo2]
 
-[logo]:
+[logo2]:
 https://github.com/doapps/dspp/raw/master/docs/images/Paso02.png
 
 
 3.Renombramos la imagen, y le damos clic a la opción **Descargar** (Download).
 
-![alt text][logo]
+![alt text][logo3]
 
-[logo]:
+[logo3]:
 https://github.com/doapps/dspp/raw/master/docs/images/Paso03.png
 
 
