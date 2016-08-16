@@ -28,7 +28,7 @@ En el macrotarget **Mobile**, los targets son:
 * iOS
 
 
-En el macrotarget **Web**, el target es:
+En el macrotarget **Web**, los targets son:
 
 * Web admin
 * Web aplicación

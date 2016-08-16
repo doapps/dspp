@@ -22,7 +22,7 @@ architecture.io
 **2. Imagen del diagrama de arquitectura**
 
 
-* **Concepto:** Imagen exportada del diagrama de arquitectura de la aplicación.
+* **Concepto:** Imagen exportada del diagrama de arquitectura de la aplicación.[Ver aquí como exportar imagen](http://wikipedia.org)
 
 * **Tipo de documento:** imagen.png
 

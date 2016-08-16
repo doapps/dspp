@@ -44,7 +44,7 @@ erd.web.spec
 **3. Imagen del diagrama de base de datos**
 
 
-* **Concepto:** Imagen exportada del diagrama de base de datos.
+* **Concepto:** Imagen exportada del diagrama de base de datos.[Ver aquí como exportar imagen](http://wikipedia.org)
 
 * **Tipo de documento:** imagen.png
 
@@ -62,4 +62,5 @@ erd.web.v.0.0.1.png
 ---
 > **Nota:**
 
->* Cada imagen exportada del diagrama de base de datos, se generará las imagenes con [versionamiento.](http://wikipedia.org)
+
+>* Según el formato de cada imagen exportada del diagrama de base de datos, ésta se generará con [versionamiento.](https://github.com/doapps/dspp/blob/master/docs/semantic-versioning.md)
