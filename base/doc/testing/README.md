@@ -14,30 +14,14 @@ El repositorio de pruebas es el contenedor de los documentos que describen los c
 * **Notación:**
 
  ```
-specification.doc
- ```
-
-
-**2. Ejecución de pruebas**
-
-* **Concepto:** Documento que contiene la ejecución de los casos de prueba relacionados a las funcionalidades de cada entregable del proyecto.
-
-* **Tipo de documento:** ejecución.pdf
-
-* **Notación:**
-
- ```
-tracking.<#entregable>
+specification.<macrotarget>
  ```
 
  Un ejemplo sería:
   ```
- tracking.01
+ specification.mobile
  ```
 
-
----
 > **Nota:**
 
->* En caso de que el proyecto sólo tenga un solo entregable, solo existirá un documento de ejecución de pruebas, este denominado **"tracking"**.
->* Los casos de prueba o casos a probar que no se hayan ejecutado o no hayan sido exitosos, pasarán a la siguiente ejecución de pruebas.
+>* Cada documento de especificación de pruebas está diferenciado por los [macrotargets] (http://wikipedia.org)

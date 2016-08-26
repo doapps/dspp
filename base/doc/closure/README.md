@@ -60,4 +60,4 @@ technical-release.<target>
 ---
 > **Nota:**
 
->* Cada documento de cierre está diferenciado por los [target](http://wikipedia.org) del proyecto.
+>* Cada documento de cierre está diferenciado por los [target](https://github.com/doapps/dspp/blob/master/docs/concepts.md#target) del proyecto.

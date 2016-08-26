@@ -1,6 +1,6 @@
 #Recursos de entorno
 
-El repositorio de recursos de entorno es el contenedor de los documentos que van a servir de soporte para la realización del proyecto.
+El repositorio de recursos de entorno es el contenedor de los documentos que van a servir de soporte, a nivel de arquitectura, a la realización de del proyecto.
 
 
 ## Contenido

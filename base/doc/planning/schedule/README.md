@@ -9,7 +9,7 @@ El repositorio de cronograma es el contenedor de los documentos que describen la
 
 * **Concepto:** Cronograma del proyecto.
 
-* **Tipo de documento:** cronograma.mpp
+* **Tipo de documento:** Microsoft professional project
 
 * **Notación:**
 

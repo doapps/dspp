@@ -45,8 +45,7 @@ requirements.<macrotarget>.<scope>
   ```
  requirements.mobile.conductor
  ```
- 
----
+
 > **Nota:**
 
->* Cada documento de historias de usuario está diferenciado por los [macrotargets] (http://wikipedia.org) y [scoupes](http://wikipedia.org) del proyecto.
+>* Cada documento de historias de usuario está diferenciado por los [macrotargets] (https://github.com/doapps/dspp/blob/master/docs/concepts.md#macrotarget) y [scopes](https://github.com/doapps/dspp/blob/master/docs/concepts.md#scope) del proyecto.

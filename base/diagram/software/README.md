@@ -21,7 +21,7 @@ process.io
 **2. Imagen del diagrama de procesos**
 
 
-* **Concepto:** Imagen exportada del diagrama de procesos de la aplicación.[Ver aquí como exportar imagen](http://wikipedia.org)
+* **Concepto:** Imagen exportada del diagrama de procesos de la aplicación.[Ver aquí como exportar imagen](https://github.com/doapps/dspp/blob/master/docs/procedures.md#exportar-imagen)
 
 * **Tipo de documento:** Imagen.png
 
