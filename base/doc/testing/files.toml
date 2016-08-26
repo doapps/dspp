@@ -1,6 +1,6 @@
-["specification"]
+["specification.<macrotarget>"]
 template = "template-blank-document"
 
-  ["specification".body]
-  doc-title = "Documento de especificación de pruebas"
+  ["specification.<macrotarget>".body]
+  doc-title = "Documento de especificación de pruebas (<macrotarget>)"
   content = "content:testing-specification"
