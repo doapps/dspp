@@ -45,3 +45,9 @@ filename = "template:ui-ios-illustrator.ai"
 
 [template-ui-web-illustrator]
 filename = "template:ui-web-illustrator.ai"
+
+[template-planning-tracking-functional]
+filename = "template:planning-tracking-functional"
+
+[template-planning-tracking-design]
+filename = "template:planning-tracking-design"

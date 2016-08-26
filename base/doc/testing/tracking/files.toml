@@ -1,0 +1,5 @@
+["tracking-functional.<target>"]
+template = "template-planning-tracking-functional"
+
+["tracking-design.<target>"]
+template = "template-planning-tracking-design"
