@@ -24,4 +24,4 @@ specification.<macrotarget>
 
 > **Nota:**
 
->* Cada documento de especificación de pruebas está diferenciado por los [macrotargets] (http://wikipedia.org)
+>* Cada documento de especificación de pruebas está diferenciado por los [macrotargets] (https://github.com/doapps/dspp/blob/master/docs/concepts.md#macrotarget)

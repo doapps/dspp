@@ -44,7 +44,7 @@ erd.web.spec
 **3. Imagen del diagrama de base de datos**
 
 
-* **Concepto:** Imagen exportada del diagrama de base de datos.[ Ver aquí como exportar imagen. ](https://github.com/doapps/dspp/blob/master/docs/procedures.md#exportar-imagen)
+* **Concepto:** Imagen exportada del diagrama de base de datos.[ Ver aquí como exportar imagen.](https://github.com/doapps/dspp/blob/master/docs/procedures.md#exportar-imagen)
 
 * **Tipo de documento:** imagen.png
 
@@ -58,7 +58,6 @@ erd.<macrotarget>.v.<major>.<minor>.<patch>.png
  ```
 erd.web.v.0.0.1.png
   ```
-
 
 > **Nota:**
 

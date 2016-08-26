@@ -35,4 +35,4 @@ architecture.v.<major>.<minor>.<patch>.png
 > **Notas:**
 
 >* Si el diagrama de arquitectura no va a variar o no será modificado luego de su primera construcción, la imagen exportada tendrá el mismo nombre que el archivo, es decir,  **architecture.png**.
->* Si el diagrama de arquitectura  varía o es modificado luego de su primera construcción, la imagen exportada tendrá el mismo nombre que el archivo pero versionado de acuerdo a cada modificación que se realice. [Ver aquí versionamiento.](https://github.com/doapps/dspp/blob/master/docs/semantic-versioning.md#versionamiento-semántico)
+>* Si el diagrama de arquitectura  varía o es modificado luego de su primera construcción, la imagen exportada tendrá el mismo nombre que el archivo pero versionado de acuerdo a cada modificación que se realice. [Ver aquí versionamiento.](https://github.com/doapps/dspp/blob/master/docs/semantic-versioning.md)
